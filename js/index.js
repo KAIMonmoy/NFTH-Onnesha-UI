@@ -20,9 +20,9 @@ $(document).ready(function() {
 
 		if (input.val() == newsRepository[0] || input.val() == newsRepository[3]) {
 			input.after(loading_gif);
-			await sleep(1000);
+			await sleep(300);
 			$('.loading').remove();
-			$('.home-content').css('background-color', '#f4590f');
+			$('body').css('background-color', '#f4590f');
 			$('.processing-tag').remove();
 			input.after(`<div class="processing-tag">
 			<img src="/images/processing.png" alt="processing">
@@ -32,9 +32,9 @@ $(document).ready(function() {
 			</div>`);
 		} else if (input.val() == newsRepository[1] || input.val() == newsRepository[4]) {
 			input.after(loading_gif);
-			await sleep(1000);
+			await sleep(300);
 			$('.loading').remove();
-			$('.home-content').css('background-color', '#2ea454');
+			$('body').css('background-color', '#2ea454');
 			$('.verified-tag').remove();
 			input.after(`<div class="verified-tag">
 			<img src="/images/verified.png" alt="verified">
@@ -42,16 +42,16 @@ $(document).ready(function() {
 		</div>`);
 		} else if (input.val() == newsRepository[2] || input.val() == newsRepository[5]) {
 			input.after(loading_gif);
-			await sleep(1000);
+			await sleep(300);
 			$('.loading').remove();
-			$('.home-content').css('background-color', '#e83a35');
+			$('body').css('background-color', '#e83a35');
 			$('.fake-tag').remove();
 			input.after(`<div class="fake-tag">
 			<img src="/images/flagged.png" alt="fake">
 			<p>This news article has been marked as a fake news.</p>
 		</div>`);
 		} else {
-			$('.home-content').css('background-color', '#f15a24');
+			$('body').css('background-color', '#f15a24');
 			$('.verified-tag').remove();
 			$('.fake-tag').remove();
 			$('.processing-tag').remove();
