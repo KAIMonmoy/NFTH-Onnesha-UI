@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* ---------------------- NavBar ----------------------- */
+
+.navbar {
+	display: flex;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px;
+}
+
+.nav-link-list {
+	display: flex;
+}
+
+.nav-link-list li {
+	padding-left: 20px;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-top: 7px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.active-nav-link {
+	border-bottom: 5px solid #f4590f;
+}
+
+.nav-link-subscribe li {
+	border: 2px solid #f4590f;
+	border-radius: 5px;
+	font-weight: 600;
+	background-color: #f4590f;
+	color: white;
+	padding: 5px 25px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 20px;
+}
+
+/* -------------------- Main Content ------------------------ */
+
+body {
+	background-color: #f15a24;
+}
+
+.home-content {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subscription-plan-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.subscription-plan {
+	width: 18vw;
+	border: 2px solid white;
+	height: 50vh;
+	margin: 10px 10px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.subscription-plan__head {
+	background-color: #f15a24;
+	border-radius: 10px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	height: 10vh;
+	font-size: 20px;
+	color: white;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subscription-plan__body {
+	vertical-align: middle;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.subscription-plan__body p {
+	padding-top: 7px;
+	padding-bottom: 5px;
+}

@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: white;
+	opacity: 0.6;
+	font-size: medium;
+}
+
+/* ---------------------- NavBar ----------------------- */
+
+.navbar {
+	display: flex;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px;
+}
+
+.nav-link-list {
+	display: flex;
+}
+
+.nav-link-list li {
+	padding-left: 20px;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-top: 7px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.active-nav-link {
+	border-bottom: 5px solid #f4590f;
+}
+
+.nav-link-subscribe li {
+	border: 2px solid #f4590f;
+	border-radius: 5px;
+	font-weight: 600;
+	color: #f4590f;
+	padding: 5px 25px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 20px;
+}
+
+/* -------------------- Main Content ------------------------ */
+
+body {
+	background-color: #f15a24;
+}
+
+.home-content {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.public-portal-tabs {
+	display: flex;
+	color: white;
+	font-size: smaller;
+	justify-content: center;
+}
+
+.public-portal-tabs li {
+	padding: 10px;
+}
+
+.public-portal-tab a {
+	color: white;
+	font-size: small;
+}
+
+.selected-portal-tab a {
+	font-weight: bold;
+	font-size: medium;
+}
+
+#report-input {
+	width: 35vw;
+	height: 50px;
+	border-radius: 10px;
+	font-size: larger;
+	padding: 5px 15px;
+}
+
+#report-input:focus {
+	outline: none;
+}
+#report-input::placeholder {
+	opacity: 0.4;
+}
+
+/* ------------ tags -------------- */
+
+.verified-tag {
+	margin: 10px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.verified-tag img {
+	margin: 10px;
+}
+
+.verified-tag p {
+	color: white;
+}
+
+.fake-tag {
+	margin: 10px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fake-tag img {
+	margin: 10px;
+}
+
+.fake-tag p {
+	color: white;
+}
+
+.processing-tag {
+	margin: 10px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.processing-tag img {
+	margin: 10px;
+}
+
+.processing-tag p {
+	color: white;
+}
+
+.processing-tag input {
+	margin-top: 20px;
+	width: 80%;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+	font-size: medium;
+	color: white;
+	font-weight: 700;
+}
+
+.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loading img {
+	width: 30%;
+	height: 30%;
+}
