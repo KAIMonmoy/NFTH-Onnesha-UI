@@ -107,6 +107,7 @@ body {
 	outline: none;
 }
 #report-input::placeholder {
+	color: #555;
 	opacity: 0.4;
 }
 

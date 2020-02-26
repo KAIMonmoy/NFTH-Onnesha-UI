@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 		if (input.val() == newsRepository[0] || input.val() == newsRepository[3]) {
 			input.after(loading_gif);
-			await sleep(500);
+			await sleep(1000);
 			$('.loading').remove();
 			$('.home-content').css('background-color', '#f4590f');
 			$('.processing-tag').remove();
@@ -32,7 +32,7 @@ $(document).ready(function() {
 			</div>`);
 		} else if (input.val() == newsRepository[1] || input.val() == newsRepository[4]) {
 			input.after(loading_gif);
-			await sleep(500);
+			await sleep(1000);
 			$('.loading').remove();
 			$('.home-content').css('background-color', '#2ea454');
 			$('.verified-tag').remove();
@@ -42,7 +42,7 @@ $(document).ready(function() {
 		</div>`);
 		} else if (input.val() == newsRepository[2] || input.val() == newsRepository[5]) {
 			input.after(loading_gif);
-			await sleep(500);
+			await sleep(1000);
 			$('.loading').remove();
 			$('.home-content').css('background-color', '#e83a35');
 			$('.fake-tag').remove();
